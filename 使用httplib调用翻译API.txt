@@ -1,0 +1,65 @@
+//需要安装httplib，openssl
+//本代码使用json库进行网页内容解析，如直接使用，请安装json库，也可自行选择其他内容解析方式
+#include "httplib.h"
+#include <stdio.h>
+//#include <curl/curl.h>
+#include <stdlib.h>
+#include <string.h>
+#include <openssl/md5.h>
+#include "json.h"
+typedef Json::Writer JsonWriter;
+typedef Json::Reader JsonReader;
+typedef Json::Value  JsonValue;
+
+//输入：需要翻译的英文单词，string类型
+//输出：翻译后的中文结果，string类型
+std::string PlaceNameTranslation(std::string tenStr)
+{
+	if (tenStr.length() > 0)
+		if (isalpha(tenStr[0]))
+		{
+			//百度API的主页网址
+			std::string HTTPURL = "http://api.fanyi.baidu.com";
+			std::string temHTTPURL = HTTPURL;
+			//处理网址:2015063000000001为个人的百度翻译ID（请替换为您的appid），12345678为个人百度翻译密钥，（请替换为您的密钥）
+			int a = rand();
+			std::string salt = to_string(a);  //随机码
+			std::string sign = "2015063000000001"+ tenStr+ salt+"12345678";   
+			//sign值进行MD5加密，并转换成16进制
+			unsigned char md[16];
+			MD5((unsigned char*)sign.c_str(), sign.length(), md);
+			string result = "";
+			char tmp[3] = { '\0' }, buf[33] = { '\0' };
+			for (int i = 0; i < 16; i++) {
+				sprintf(tmp, "%2.2x", md[i]);
+				strcat(buf, tmp);
+			}
+			sign = buf;
+			//网址后缀
+			std::string temURL = "/api/trans/vip/translate?appid=2015063000000001&q="+ tenStr+"&from=en&to=zh&salt="+ salt+"&sign="+ sign;
+			temURL = String_TO_UTF8(temURL);
+			httplib::Client cli(temHTTPURL);   //"nominatim.terminus.plus"
+			//获取网址信息
+			if (auto res = cli.Get(temURL.c_str())) {
+				if (res->status == 200) {
+					std::string strInfoAll = res->body;
+					strInfoAll = UTF8_To_String(strInfoAll);
+					Json::Reader Reader;
+					Json::Value root;
+					Reader.parse(strInfoAll, root);
+					int intRootSize = root.size();
+					if (intRootSize <= 0)
+					{
+						std::cout << "ERROR: Baidu translation " << tenStr << "failed ！！！！" << std::endl;
+					}
+					if (intRootSize > 0)
+					{
+						std::string tem = root["from"].asString();
+						std::string cNPlaceName = root["trans_result"][0]["dst"].asString();
+						cNPlaceName = UTF8_To_String(cNPlaceName);
+						return cNPlaceName;
+					}
+				}
+			}		
+		}
+}
