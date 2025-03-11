@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ocr.h ocr.cpp
         autofontsizelabel.h autofontsizelabel.cpp autofontsizelabel.ui
         config.hpp
+        screenshotwidget.h screenshotwidget.cpp
 
 
 

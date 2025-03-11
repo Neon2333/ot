@@ -138,7 +138,11 @@ ScreenshotTranslation_autogen/timestamp: \
 	D:/Qt/6.8.1/msvc2022_64/include/QtCore/qversiontagging.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtCore/qxptype_traits.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtCore/qyieldcpu.h \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QMouseEvent \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QPainter \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QPixmap \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QResizeEvent \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QScreen \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QTextDocument \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/QTransform \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qaction.h \
@@ -159,7 +163,9 @@ ScreenshotTranslation_autogen/timestamp: \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qinputmethod.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qkeysequence.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpaintdevice.h \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpainter.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpalette.h \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpen.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpicture.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpixelformat.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qpixmap.h \
@@ -171,6 +177,7 @@ ScreenshotTranslation_autogen/timestamp: \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qscreen.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qscreen_platform.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextdocument.h \
+	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextoption.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtgui-config.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtguiexports.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtguiglobal.h \
@@ -179,10 +186,12 @@ ScreenshotTranslation_autogen/timestamp: \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qvectornd.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qwindowdefs.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QApplication \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QHBoxLayout \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QLabel \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QMainWindow \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QWidget \
+	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qapplication.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qboxlayout.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qframe.h \
 	D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qgridlayout.h \
@@ -424,5 +433,7 @@ ScreenshotTranslation_autogen/timestamp: \
 	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h \
 	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.cpp \
 	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h \
+	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp \
+	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h \
 	E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.ui \
 	D:/Qt/Tools/CMake_64/bin/cmake.exe

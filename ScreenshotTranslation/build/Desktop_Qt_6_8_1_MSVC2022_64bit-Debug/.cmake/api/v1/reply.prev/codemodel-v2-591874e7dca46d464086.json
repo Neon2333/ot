@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-36c24913da30d1ab6142.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ScreenshotTranslation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ScreenshotTranslation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ScreenshotTranslation-Debug-7539e8a5260792fe627f.json",
+					"name" : "ScreenshotTranslation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ScreenshotTranslation_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ScreenshotTranslation_autogen-Debug-bca4a1d784ae8fe7699e.json",
+					"name" : "ScreenshotTranslation_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ScreenshotTranslation_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ScreenshotTranslation_autogen_timestamp_deps-Debug-2a63e1ed46fa9a2f71f3.json",
+					"name" : "ScreenshotTranslation_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Debug",
+		"source" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

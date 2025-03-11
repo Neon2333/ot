@@ -339,6 +339,12 @@
 			"MU",
 			"EWIEGA46WW/moc_ocr.cpp",
 			null
+		],
+		[
+			"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_screenshotwidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -413,6 +419,11 @@
 		],
 		[
 			"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.cpp",
+			"MU",
+			null
+		],
+		[
+			"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp",
 			"MU",
 			null
 		]

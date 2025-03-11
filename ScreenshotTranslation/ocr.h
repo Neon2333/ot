@@ -20,16 +20,20 @@ class Ocr:public QObject
 
 public:
     Ocr();
-    Ocr(vector<QString> commands, QString saveShotPath);
+    Ocr(vector<QString> commands);
     void startOcr();
     QProcess* process();
+
+    void hideOcrWindow();
+    void setCommands(vector<QString> commands);
 
     ~Ocr();
 
 private:
     QStringList m_command;
-    QString m_saveShotPath;
     QProcess* m_ocrProcess=nullptr;
+
+
 
 signals:
     void resReady(QString res);

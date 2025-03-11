@@ -1,11 +1,12 @@
 #include "ocr.h"
+#include <QSettings>
 #include <QDebug>
 
 Ocr::Ocr() {}
 
-Ocr::Ocr(vector<QString> commands, QString saveShotPath)
+Ocr::Ocr(vector<QString> commands)
 {
-    m_saveShotPath=std::move(saveShotPath);
+    m_command.clear();
     m_command << "umi-ocr";
     for(int i=0;i<commands.size();i++)
     {
@@ -29,6 +30,7 @@ Ocr::Ocr(vector<QString> commands, QString saveShotPath)
     //     else
     //     {
     //         emit resReady(result);
+    //         qDebug()<<"result="<<result;
     //     }
     // });
 
@@ -66,6 +68,34 @@ QProcess *Ocr::process()
 {
     return m_ocrProcess;
 }
+
+void Ocr::hideOcrWindow()
+{
+    QSettings setting(config::umiocrConfig, QSettings::IniFormat);
+    QVariant isPopOcrWindow = setting.value("ScreenshotOCR/action.popMainWindow");
+    if(isPopOcrWindow.toBool())
+    {
+        setting.setValue("ScreenshotOCR/action.popMainWindow", false);
+    }
+}
+
+void Ocr::setCommands(vector<QString> commands)
+{
+    m_command.clear();
+    m_command << "umi-ocr";
+    for(int i=0;i<commands.size();i++)
+    {
+        m_command << commands.at(i);
+    }
+
+    if(m_ocrProcess!=nullptr)   m_ocrProcess->deleteLater();
+    m_ocrProcess = new QProcess;
+    m_ocrProcess->setProgram(config::ocrexePath);
+    qDebug()<<"m_ocrProcess="<<config::ocrexePath;
+    m_ocrProcess->setArguments(m_command);
+    qDebug()<<"args="<<m_command;
+}
+
 
 Ocr::~Ocr()
 {

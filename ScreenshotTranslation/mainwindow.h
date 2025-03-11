@@ -5,6 +5,7 @@
 #include "autofontsizelabel.h"
 #include <QHBoxLayout>
 #include "ocr.h"
+#include "screenshotwidget.h"
 
 class MainWindow : public QMainWindow
 {
@@ -20,7 +21,9 @@ private:
     QWidget* content = nullptr;
     QHBoxLayout* m_hlay = nullptr;
     Ocr* m_ocr = nullptr;
+    ScreenshotWidget* m_shot=nullptr;
 
+    void initUI();
     void installGlobalEventFilter();
 
 protected:

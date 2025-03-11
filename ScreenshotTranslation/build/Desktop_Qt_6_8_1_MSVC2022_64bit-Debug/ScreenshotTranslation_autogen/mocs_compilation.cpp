@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_autofontsizelabel.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_ocr.cpp"
+#include "EWIEGA46WW/moc_screenshotwidget.cpp"
