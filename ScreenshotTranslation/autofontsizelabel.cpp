@@ -67,13 +67,13 @@ void AutoFontSizeLabel::adjustFontSize()
 void AutoFontSizeLabel::setText(const QString &text)
 {
     QLabel::setText(text);
-    adjustFontSize();
+    // adjustFontSize();
 }
 
 void AutoFontSizeLabel::resizeEvent(QResizeEvent *ev)
 {
     QLabel::resizeEvent(ev);
-    adjustFontSize();
+    // adjustFontSize();
 }
 
 

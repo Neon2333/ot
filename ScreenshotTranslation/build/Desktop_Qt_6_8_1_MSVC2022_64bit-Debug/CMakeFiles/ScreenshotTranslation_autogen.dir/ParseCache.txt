@@ -187,9 +187,11 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabe
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qwidget.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.h
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.cpp
  uic:ui_autofontsizelabel.h
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mmc:Q_OBJECT
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/QList
@@ -399,12 +401,10 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qwidget.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.h
- mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.cpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/main.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h
  mmc:Q_OBJECT
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/QObject
@@ -513,7 +513,6 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/qversiontagging.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/qxptype_traits.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/qyieldcpu.h
- mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h
  mmc:Q_OBJECT
@@ -705,5 +704,4 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qwidget.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/main.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.cpp

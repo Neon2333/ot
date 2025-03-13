@@ -22,6 +22,7 @@ private:
     QHBoxLayout* m_hlay = nullptr;
     Ocr* m_ocr = nullptr;
     ScreenshotWidget* m_shot=nullptr;
+    QString m_ocrLanguage;
 
     void initUI();
     void installGlobalEventFilter();

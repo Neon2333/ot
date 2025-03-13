@@ -104,5 +104,4 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   D:/Qt/6.8.1/msvc2022_64/include/QtCore/qutf8stringview.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtCore/qxptype_traits.h \
-  D:/Qt/6.8.1/msvc2022_64/include/QtCore/qyieldcpu.h \
-  E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
+  D:/Qt/6.8.1/msvc2022_64/include/QtCore/qyieldcpu.h

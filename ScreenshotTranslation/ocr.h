@@ -6,7 +6,6 @@
 #include <QProcess>
 #include <vector>
 // #include <filesystem>
-#include "config.hpp"
 
 using std::vector;
 using std::string;
@@ -24,7 +23,7 @@ public:
     void startOcr();
     QProcess* process();
 
-    void hideOcrWindow();
+    void useConfig(QString language);
     void setCommands(vector<QString> commands);
 
     ~Ocr();

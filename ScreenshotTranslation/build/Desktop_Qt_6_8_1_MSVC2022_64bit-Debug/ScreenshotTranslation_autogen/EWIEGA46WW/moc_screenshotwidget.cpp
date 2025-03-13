@@ -38,7 +38,7 @@ struct qt_meta_tag_ZN16ScreenshotWidgetE_t {};
 #ifdef QT_MOC_HAS_STRINGDATA
 static constexpr auto qt_meta_stringdata_ZN16ScreenshotWidgetE = QtMocHelpers::stringData(
     "ScreenshotWidget",
-    "areaSelected",
+    "areaSelectFinished",
     "",
     "rect",
     "canceled"
@@ -80,7 +80,7 @@ Q_CONSTINIT const QMetaObject ScreenshotWidget::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_tag_ZN16ScreenshotWidgetE_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<ScreenshotWidget, std::true_type>,
-        // method 'areaSelected'
+        // method 'areaSelectFinished'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QRect &, std::false_type>,
         // method 'canceled'
@@ -94,7 +94,7 @@ void ScreenshotWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     auto *_t = static_cast<ScreenshotWidget *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->areaSelected((*reinterpret_cast< std::add_pointer_t<QRect>>(_a[1]))); break;
+        case 0: _t->areaSelectFinished((*reinterpret_cast< std::add_pointer_t<QRect>>(_a[1]))); break;
         case 1: _t->canceled(); break;
         default: ;
         }
@@ -103,7 +103,7 @@ void ScreenshotWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _q_method_type = void (ScreenshotWidget::*)(const QRect & );
-            if (_q_method_type _q_method = &ScreenshotWidget::areaSelected; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+            if (_q_method_type _q_method = &ScreenshotWidget::areaSelectFinished; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
@@ -150,7 +150,7 @@ int ScreenshotWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void ScreenshotWidget::areaSelected(const QRect & _t1)
+void ScreenshotWidget::areaSelectFinished(const QRect & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

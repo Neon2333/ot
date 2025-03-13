@@ -1,4 +1,6 @@
 #include "screenshotwidget.h"
+#include "config.hpp"
+
 
 ScreenshotWidget::ScreenshotWidget(QWidget *parent)
     :QWidget(parent)
@@ -21,9 +23,25 @@ ScreenshotWidget::ScreenshotWidget(QWidget *parent)
 ScreenshotWidget::~ScreenshotWidget()
 {}
 
-QRect ScreenshotWidget::getSelectedRect() const
+std::pair<QRect,bool> ScreenshotWidget::saveSelectedRect(QString path) const
 {
-    return selectedRect.normalized();
+    QScreen *primaryScreen = QGuiApplication::primaryScreen();
+    qreal scaleFactor = primaryScreen->devicePixelRatio();//屏幕放缩比例（125%即1.25）
+    // 获取全屏截图
+    QPixmap fullScreen = QGuiApplication::primaryScreen()->grabWindow(0);
+    // 100%比例下的rect转换为放缩比例下的rect
+    QRect physicalSelectedRect(
+        static_cast<int>(m_selectedRect.x() * scaleFactor),
+        static_cast<int>(m_selectedRect.y() * scaleFactor),
+        static_cast<int>(m_selectedRect.width() * scaleFactor),
+        static_cast<int>(m_selectedRect.height() * scaleFactor)
+        );
+    // 截取选中区域
+    QPixmap pixmapSelectedArea = fullScreen.copy(physicalSelectedRect);
+    // 保存到文件
+    bool isSave = pixmapSelectedArea.save(path);
+
+    return std::move(std::make_pair(physicalSelectedRect,isSave));
 }
 
 void ScreenshotWidget::mousePressEvent(QMouseEvent *event)
@@ -46,11 +64,15 @@ void ScreenshotWidget::mouseMoveEvent(QMouseEvent *event)
 
 void ScreenshotWidget::mouseReleaseEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton && isSelecting) {
-        selectedRect = QRect(startPos, currentPos).normalized();
-        isSelecting = false;
-        emit areaSelected(selectedRect);
+    if (event->button() == Qt::LeftButton && isSelecting)
+    {
+        //先关闭截图窗口，再发送获取截图信号
         this->close();
+        isSelecting = false;
+        m_selectedRect = QRect(startPos, currentPos).normalized();
+        std::pair<QRect,bool> res = saveSelectedRect(config::saveShotPath);
+
+        if(res.second)  emit areaSelectFinished(res.first); //截图保存完毕再发射信号
     }
 }
 

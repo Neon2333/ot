@@ -15,10 +15,10 @@ public:
     explicit ScreenshotWidget(QWidget *parent = nullptr);
     ~ScreenshotWidget();
 
-    QRect getSelectedRect() const;
+    std::pair<QRect,bool> saveSelectedRect(QString path) const;
 
 signals:
-    void areaSelected(const QRect& rect);
+    void areaSelectFinished(const QRect& rect);
     void canceled();
 
 protected:
@@ -32,7 +32,7 @@ private:
     bool isSelecting;
     QPoint startPos;
     QPoint currentPos;
-    QRect selectedRect;
+    QRect m_selectedRect;
 };
 
 #endif // SCREENSHOTWIDGET_H

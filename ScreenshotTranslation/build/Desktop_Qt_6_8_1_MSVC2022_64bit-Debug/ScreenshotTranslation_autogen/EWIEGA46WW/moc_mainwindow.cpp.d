@@ -206,6 +206,5 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qwidget.h \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.h \
-  E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h

@@ -1,10 +1,13 @@
 #include "mainwindow.h"
 #include <vector>
 #include <QDebug>
+#include "config.hpp"
 
 MainWindow::MainWindow(QWidget *parent)
 {
     initUI();
+
+    m_ocrLanguage=config::ocrLanguageCh;
 
     m_shot = new ScreenshotWidget;
     m_shot->hide();
@@ -12,26 +15,17 @@ MainWindow::MainWindow(QWidget *parent)
     installGlobalEventFilter(); //安装事件过滤器，实现按键事件
 
     m_ocr = new Ocr(std::vector<QString>{"--screenshot"});
-    connect(m_shot, &ScreenshotWidget::areaSelected, this, [&](const QRect& rect){
-        // 获取全屏截图
-        QPixmap fullScreen = QGuiApplication::primaryScreen()->grabWindow(0);
-        // 截取选中区域
-        QPixmap selectedArea = fullScreen.copy(rect);
-        // 保存到文件
-        selectedArea.save(config::saveShotPath);
-
-        qDebug() << "Saved area:" << rect;
-
-
+    connect(m_shot, &ScreenshotWidget::areaSelectFinished, this, [&](const QRect& rectSelected){
         //识别
-        int x=rect.x();
-        int y=rect.y();
-        int w=rect.width();
-        int h=rect.height();
-        QString cmdRect = QString(" rect=%1,%2,%3,%4").arg(x).arg(y).arg(w).arg(h);
-        // m_ocr->setCommands(std::vector<QString>{"--screenshot"});
-        m_ocr->setCommands(std::vector<QString>{"--screenshot", " screen=0", cmdRect});
-        // m_ocr->hideOcrWindow(); //禁止弹出ocr主界面
+        m_ocr->useConfig(m_ocrLanguage); //更新配置
+        QString cmdRect = QString("rect=%1,%2,%3,%4")
+                              .arg(rectSelected.x())
+                              .arg(rectSelected.y())
+                              .arg(rectSelected.width())
+                              .arg(rectSelected.height());
+        m_ocr->setCommands(std::vector<QString>{"--sc", "screen=0", cmdRect});
+        // m_ocr->setCommands(std::vector<QString>{QString("--path \"%1\"").arg(config::saveShotPath)});
+
         m_ocr->startOcr();
     });
 
@@ -50,7 +44,7 @@ void MainWindow::initUI()
     resize(600,300);
     move(800,300);
 
-    const QString qssStr = QString("QLabel{background-color:lightblue;}");
+    const QString qssStr = QString("QLabel{background-color:rgba(170,118,105,255);}");
 
 
     m_label_textOCR = new AutoFontSizeLabel(this);
@@ -83,17 +77,32 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
     {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
         // 处理按键事件
-        if(keyEvent->modifiers() & Qt::ControlModifier)
+        if(keyEvent->modifiers() & Qt::AltModifier)
         {
-            if(keyEvent->key() == Qt::Key_Return || keyEvent->key() == Qt::Key_Enter)
+            // if(keyEvent->key() == Qt::Key_Return || keyEvent->key() == Qt::Key_Enter)
+            if(keyEvent->key() == Qt::Key_1)
             {
+                m_ocrLanguage=config::ocrLanguageCh;
                 this->hide();
-
-                m_shot->show();
-
-                // m_ocr->startOcr();
+                m_shot->show();//显示截图控件，按下鼠标进行截图
 
                 return true; // 表示事件已处理
+            }
+            else if(keyEvent->key() == Qt::Key_2)
+            {
+                m_ocrLanguage=config::ocrLanguageEn;
+                this->hide();
+                m_shot->show();
+
+                return true;
+            }
+            else if(keyEvent->key() == Qt::Key_3)
+            {
+                m_ocrLanguage=config::ocrLanguageJpn;
+                this->hide();
+                m_shot->show();
+
+                return true;
             }
         }
     }
