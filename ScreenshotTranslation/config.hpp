@@ -25,8 +25,8 @@ extern QString saveShotPath;
 extern bool popOcrWindow;
 
 const string fanyiURL="http://api.fanyi.baidu.com";
-const string fanyiID="20250314002302864";//读配置文件
-const string fanyiKey="6m5HxkBjPfOUIZ1S9eN7";
+const string fanyiID="ID";//读配置文件
+const string fanyiKey="key";
 
 };
 
