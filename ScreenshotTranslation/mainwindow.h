@@ -22,9 +22,12 @@ public:
 private:
     AutoFontSizeLabel* m_label_textOCR = nullptr;
     AutoFontSizeLabel* m_label_textTran = nullptr;
-    QLabel* m_label_status=nullptr;
-    QSpacerItem* m_placeholder = nullptr;
     QLabel* m_label_ocrLanguage = nullptr;
+    QSpacerItem* m_placeholderLeft = nullptr;
+    QLabel* m_label_status=nullptr;
+    QSpacerItem* m_placeholderRight = nullptr;
+    QLabel* m_label_transLanguage=nullptr;
+
     QWidget* content = nullptr;
     QHBoxLayout* m_hlayTop = nullptr;
     QHBoxLayout* m_hlayBottom = nullptr;
@@ -32,13 +35,16 @@ private:
     Ocr* m_ocr = nullptr;
     ScreenshotWidget* m_shot=nullptr;
     config::Language m_ocrLanguage{config::Language::none};
+    config::Language m_transLanguage{config::Language::none};
     Translate* m_translate;
 
     void initUI();
     void installGlobalEventFilter();
     void setOcrLanguage(config::Language language);
+    void setTransLanguage(config::Language language);
     config::Language ocrLanguage();
     void close();
+    void setStatus(QString status);
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;

@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     initUI();
 
-    setOcrLanguage(config::Language::zh);
-    // m_ocrLanguage=config::Language::zh;
+    setOcrLanguage(config::initOcrLanguage);
+    setTransLanguage(config::initTransLanguage);
 
     m_shot = new ScreenshotWidget;
     m_shot->hide();
@@ -44,20 +44,24 @@ MainWindow::MainWindow(QWidget *parent)
         QString resTmp=res.mid(0, res.size()-4);//res末尾有"\r\n\r\n"，这是ocr识别结果所带
         m_label_textOCR->setText(resTmp);
 
-        m_translate->doTranslate(resTmp.toStdString(), m_ocrLanguage, config::Language::zh);
-        qDebug()<<"translate finished...";
+        m_translate->doTranslate(resTmp.toStdString(), m_ocrLanguage, m_transLanguage);
     });
 
     //识别错误
-    connect(m_ocr, &Ocr::resError, this, [&](QString err){
+    connect(m_ocr, &Ocr::resStatus, this, [&](QString err){
         this->show();
-        m_label_status->setText(err);
+        setStatus(err);
     });
 
     //翻译内容写入控件
     m_translate = new Translate();
     connect(m_translate, &Translate::translateFinished, this, [&](QString rslt){
-        m_label_textTran->setText(rslt);
+        setStatus(rslt);
+    });
+
+    //翻译错误
+    connect(m_translate, &Translate::setStatus, this, [&](QString rslt){
+        setStatus(rslt);
     });
 
     //换识别语言重启ocr后，启动截图
@@ -66,13 +70,19 @@ MainWindow::MainWindow(QWidget *parent)
         this->hide();
         m_shot->show();//显示截图控件，按下鼠标进行截图
     });
+
 }
 
 MainWindow::~MainWindow() { close();}
 
+void MainWindow::setStatus(QString status)
+{
+    m_label_status->setText(status);
+}
+
 void MainWindow::initUI()
 {
-    setWindowFlags(Qt::FramelessWindowHint);
+    // setWindowFlags(Qt::FramelessWindowHint);
 
     resize(600,150);
     move(800,300);
@@ -85,19 +95,31 @@ void MainWindow::initUI()
     m_hlayTop->addWidget(m_label_textOCR, 1);
     m_hlayTop->addWidget(m_label_textTran, 1);
 
-    m_label_status = new QLabel(this);
-    m_label_status->setAlignment(Qt::AlignLeft);
-    m_label_status->setFixedSize(200,20);
+
     m_label_ocrLanguage = new QLabel(this);
     m_label_ocrLanguage->setAlignment(Qt::AlignCenter);
     m_label_ocrLanguage->setFixedSize(50,20);
-    m_placeholder = new QSpacerItem(this->width()-m_label_status->width()-m_label_ocrLanguage->width(), 20, QSizePolicy::Fixed, QSizePolicy::Fixed);
+
+    m_label_status = new QLabel(this);
+    m_label_status->setAlignment(Qt::AlignCenter);
+    m_label_status->setFixedSize(200,20);
+
+    m_label_transLanguage = new QLabel(this);
+    m_label_transLanguage->setAlignment(Qt::AlignCenter);
+    m_label_transLanguage->setFixedSize(50,20);
+
+    int widthPlaceHolder = 0.5*(this->width()-m_label_status->width()-m_label_ocrLanguage->width()-m_label_transLanguage->width());
+    m_placeholderLeft = new QSpacerItem(widthPlaceHolder, 20, QSizePolicy::Fixed, QSizePolicy::Fixed);
+    m_placeholderRight = new QSpacerItem(widthPlaceHolder, 20, QSizePolicy::Fixed, QSizePolicy::Fixed);
+
     m_hlayBottom = new QHBoxLayout;
     m_hlayBottom->setSpacing(0);
     m_hlayBottom->setContentsMargins(0,0,0,0);
-    m_hlayBottom->addWidget(m_label_status);
-    m_hlayBottom->addSpacerItem(m_placeholder);
     m_hlayBottom->addWidget(m_label_ocrLanguage, 1);
+    m_hlayBottom->addSpacerItem(m_placeholderLeft);
+    m_hlayBottom->addWidget(m_label_status);
+    m_hlayBottom->addSpacerItem(m_placeholderRight);
+    m_hlayBottom->addWidget(m_label_transLanguage);
 
     m_vlay=new QVBoxLayout;
     m_vlay->addLayout(m_hlayTop);
@@ -106,16 +128,26 @@ void MainWindow::initUI()
     m_vlay->setContentsMargins(4,4,4,4);
 
     const QString qssStr = QString("QLabel{border-radius:5px;"
-                                   "background-color:rgba(170,118,105,255);"
+                                   "background-color:rgba(148,165,141,255);"
                                    "color:rgba(255,255,255,255);}");
-    m_label_textOCR->setStyleSheet(qssStr);
-    m_label_textTran->setStyleSheet(qssStr);
+    m_label_textOCR->setStyleSheet(QString("QLabel{border-radius:5px;"
+                                            "background-color:rgba(148,165,141,255);"
+                                            "color:rgba(255,255,255,255);}"));
+    m_label_textTran->setStyleSheet(QString("QLabel{border-radius:5px;"
+                                            "background-color:rgba(251,210,106,255);"
+                                            "color:rgba(255,255,255,255);}"));
+    m_label_ocrLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
+                                                 "background-color:rgba(81,118,147,255);"
+                                                 "color:rgba(255,255,255,255);}"));
     m_label_status->setStyleSheet(QString("QLabel{border-radius:5px;"
                                           // "background-color:rgba(255,255,255,255);"
                                           "color:rgba(255,0,0,255);}"));
-    m_label_ocrLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
-                                               "background-color:rgba(0,0,0,255);"
+    m_label_transLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
+                                               "background-color:rgba(81,118,147,255);"
                                                "color:rgba(255,255,255,255);}"));
+    m_label_status->setStyleSheet(QString("QLabel{border-radius:5px;"
+                                          "background-color:rgba(129,216,208,255);"
+                                          "color:rgba(255,255,255,255);}"));
 
     content = new QWidget(this);
     content->setLayout(m_vlay);
@@ -152,6 +184,30 @@ void MainWindow::setOcrLanguage(config::Language language)
 
     if(m_ocr) m_ocr->quitOcr(); //修改语言后退出ocr，待startOcr重启
 }
+
+void MainWindow::setTransLanguage(config::Language language)
+{
+    if(m_transLanguage==language)
+    {
+        return;
+    }
+    m_transLanguage=language;
+
+    switch(m_transLanguage)
+    {
+    case config::Language::zh:
+        m_label_transLanguage->setText("zh");
+        break;
+    case config::Language::en:
+        m_label_transLanguage->setText("en");
+        break;
+    case config::Language::jp:
+        m_label_transLanguage->setText("jp");
+        break;
+    default: break;
+    }
+}
+
 
 config::Language MainWindow::ocrLanguage()
 {
@@ -195,16 +251,19 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
             else if(keyEvent->key() == Qt::Key_1)
             {
                 setOcrLanguage(config::Language::zh);
+                setTransLanguage(config::Language::zh);
                 return true; // 表示事件已处理
             }
             else if(keyEvent->key() == Qt::Key_2)
             {
                 setOcrLanguage(config::Language::en);
+                setTransLanguage(config::Language::zh);
                 return true;
             }
             else if(keyEvent->key() == Qt::Key_3)
             {
                 setOcrLanguage(config::Language::jp);
+                setTransLanguage(config::Language::zh);
                 return true;
             }
         }

@@ -40,7 +40,7 @@ private:
 
 signals:
     void resReady(QString res);
-    void resError(QString err);
+    void resStatus(QString status);
     void quitOcrFinished();
 
 };

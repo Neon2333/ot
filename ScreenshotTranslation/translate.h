@@ -15,10 +15,11 @@ public:
     Translate();
     ~Translate();
 
-    QString doTranslate(const string& text, config::Language languageTranslateFrom, config::Language languageTranslateTo=config::Language::zh);
+    void doTranslate(const string& text, config::Language languageTranslateFrom, config::Language languageTranslateTo=config::Language::zh);
 
 signals:
     void translateFinished(QString result);
+    void setStatus(QString status);
 };
 
 #endif // TRANSLATE_H

@@ -36,14 +36,14 @@ Ocr::Ocr(vector<QString> commands)
         if (code != 0)
         {
             QByteArray error = m_ocrProcess->readAllStandardError();
-            emit resError(QString("error: OCR failed...code=%1").arg(code));
+            emit resStatus(QString("error: OCR failed...code=%1").arg(code));
         }
 
         QByteArray output = m_ocrProcess->readAllStandardOutput();
         QString result = QString::fromLocal8Bit(output);
         if(result.isEmpty())
         {
-            emit resError("error: contents of OCR is empty...");
+            emit resStatus("error: contents of OCR is empty...");
         }
         else
         {
@@ -59,7 +59,7 @@ void Ocr::startOcr()
         m_ocrProcess->start();
         if(!m_ocrProcess->waitForFinished(10000))
         {
-            emit resError(QString("error: ocr out of time..."));//超时
+            emit resStatus(QString("error: ocr out of time..."));//超时
         }
     }
 }
@@ -133,14 +133,14 @@ void Ocr::setCommands(vector<QString> commands)
         if (code != 0)
         {
             QByteArray error = m_ocrProcess->readAllStandardError();
-            emit resReady(QString("OCR failed...，code=%1").arg(code));
+            emit resStatus(QString("OCR failed...，code=%1").arg(code));
         }
 
         QByteArray output = m_ocrProcess->readAllStandardOutput();
         QString result = QString::fromLocal8Bit(output);
         if(result.isEmpty())
         {
-            emit resReady("OCR failed...");
+            emit resStatus("OCR failed...");
         }
         else
         {

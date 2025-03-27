@@ -16,8 +16,8 @@ window.closeWin2Hide=true
 window.hideTrayIcon=false
 window.simpleNotificationType=inside
 window.geometry="150,144,800,500"
-window.messageMemory=@Invalid()
-window.doubleLayout=@Invalid()
+window.messageMemory=@Variant(\0\0\0\x7f\0\0\0\tQJSValue\0\0\0\0\0\0\0\0\t\0\0\0\0)
+window.doubleLayout=@Variant(\0\0\0\x7f\0\0\0\tQJSValue\0\0\0\0\0\0\0\0\b\0\0\0\0)
 screenshot.hideWindow=true
 screenshot.hideWindowTime=0.2
 server.enable=true
@@ -45,4 +45,4 @@ other.simpleNotificationType=default
 [TabPageManager]
 openPageList=@Variant(\0\0\0\t\0\0\0\x1\0\0\0\n\0\0\0>\0S\0\x63\0r\0\x65\0\x65\0n\0s\0h\0o\0t\0O\0\x43\0R\0/\0S\0\x63\0r\0\x65\0\x65\0n\0s\0h\0o\0t\0O\0\x43\0R\0.\0q\0m\0l)
 showPageIndex=0
-refresh=false
+refresh=true

@@ -20,7 +20,7 @@ using namespace rapidjson;
 Translate::Translate() {}
 Translate::~Translate(){}
 
-QString Translate::doTranslate(const string &text, Language languageTranslateFrom, Language languageTranslateTo)
+void Translate::doTranslate(const string &text, Language languageTranslateFrom, Language languageTranslateTo)
 {
     //md5加密sign
     std::mt19937 gen((unsigned int)time(NULL));
@@ -46,20 +46,18 @@ QString Translate::doTranslate(const string &text, Language languageTranslateFro
                    +"&salt=" + salt
                    +"&sign=" + std::string(signMD5);
 
-    httplib::Client cli(fanyiURL);
-    // cli.enable_server_certificate_verification(true);
-
-    //http请求
-    auto rep = cli.Get(rqURL.c_str());
     QString rslt;
-    if(rep && rep->status == 200)
+    try
     {
-        std::string repBody = rep->body;
-        try
+        //http请求
+        httplib::Client cli(fanyiURL);
+        auto rep = cli.Get(rqURL.c_str());
+
+        if(rep && rep->status == 200)
         {
+            std::string repBody = rep->body;
             Document doc;
             doc.Parse(repBody.c_str(), repBody.size());
-            qDebug()<<"5";
             if(doc.HasMember("trans_result"))
             {
                 const Value& transReltArr = doc["trans_result"];
@@ -72,46 +70,44 @@ QString Translate::doTranslate(const string &text, Language languageTranslateFro
                         if(rsltTmp.IsString())
                         {
                             rslt = QString::fromStdString(rsltTmp.GetString());
-                            qDebug()<<"rslt="<<rslt;
                             emit translateFinished(rslt);
                         }
                         else
                         {
-                            qDebug()<<"dst not string...";
-                            rslt = "dst not string...";
+                            rslt = "wrong translate...";
                         }
                     }
                     else
                     {
-                        qDebug()<<"dst not exists...";
-                        rslt = "dst not exists...";
+                        rslt = "wrong translate...";
                     }
                 }
                 else
                 {
-                    qDebug()<<"trans_result empty...";
-                    rslt = "trans_result empty...";
+                    rslt = "wrong translate...";
                 }
             }
             else
             {
-                qDebug()<<"trans_result not exists...";
-                rslt = "trans_result not exists...";
+                rslt = "wrong translate...";
             }
-
         }
-        catch(std::runtime_error& e)
+        else
         {
-            qDebug()<<"parse json error:    "<<e.what();
-            std::cerr<<"parse json error:    "<<e.what();
+            rslt = QString("ERROR: GET response code: %1").arg(rep->status);
         }
+        emit setStatus(rslt);
     }
-    else
+    catch(std::runtime_error& e)
     {
-        rslt = QString("ERROR: GET response code: %1").arg(rep->status);
-        emit translateFinished(rslt);
-
+        qDebug()<<"parse json error:    "<<e.what();
+        //emit setStatus("parse json error:    " + e.what());
     }
-    return rslt;
+    catch (const std::exception& e)
+    {
+        qDebug()<<e.what();
+        //emit setStatus("parse json error:    " + e.what());
+    }
+
 }
 
