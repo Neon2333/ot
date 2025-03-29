@@ -27,7 +27,7 @@ public:
     void quitOcr();
     QProcess* process();
 
-    void useConfig(config::Language language);
+    void useConfig(Language language);
     void setCommands(vector<QString> commands);
 
     ~Ocr();

@@ -69,7 +69,7 @@ void ScreenshotWidget::mouseReleaseEvent(QMouseEvent *event)
         this->close();
         isSelecting = false;
         m_selectedRect = QRect(startPos, currentPos).normalized();
-        std::pair<QRect,bool> res = saveSelectedRect(config::saveShotPath);
+        std::pair<QRect,bool> res = saveSelectedRect(config::cfg.saveShotPath);
 
         if(res.second)  emit areaSelectFinished(res.first); //截图保存完毕再发射信号
     }

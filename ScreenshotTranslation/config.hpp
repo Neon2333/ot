@@ -9,11 +9,11 @@
 using std::array;
 using std::string;
 
-
-namespace config
-{
-//写死
 enum class Language{none,zh,en,jp};
+
+struct Config
+{
+public:
 
 const QString ocrLanguageModelCh="models/config_chinese.txt";
 const QString ocrLanguageModelJp="models/config_japan.txt";
@@ -21,44 +21,58 @@ const QString ocrLanguageModelEn="models/config_en.txt";
 const string fanyiURL="http://api.fanyi.baidu.com";
 
 //main.cpp初始化
-extern QString executableDir;
-extern QString umiocrConfig;
-extern QString configPath;
-extern QString ocrexePath;
-extern QString saveShotPath;
-extern bool popOcrWindow;
-extern array<QString,12> ocrCommands;
+inline static QString executableDir;
+inline static QString umiocrConfig;
+inline static QString configPath;
+inline static QString ocrexePath;
+inline static QString saveShotPath;
+inline static QString logPath;
+inline static bool popOcrWindow;
+inline static array<QString,12> ocrCommands;
 
 //读配置
-extern string fanyiID;
-extern string fanyiKey;
-extern Language initOcrLanguage;
-extern Language initTransLanguage;
+inline static string fanyiID;
+inline static string fanyiKey;
+inline static Language initOcrLanguage;
+inline static Language initTransLanguage;
 
-inline static void readConfig(QString path)
+static void make()
 {
-    QSettings setting(config::configPath, QSettings::IniFormat);
+    // umiocrConfig=QCoreApplication::applicationDirPath() + "/thirdParty/UmiOCR-data/.settings";
+    // qDebug()<<umiocrConfig;
+    // configPath=QCoreApplication::applicationDirPath() + "/config.ini";
+    // ocrexePath=QCoreApplication::applicationDirPath() + "/thirdParty/Umi-OCR.exe";
+    // saveShotPath=QCoreApplication::applicationDirPath() + "/saveShots/shot.png";
+    umiocrConfig = executableDir + "/thirdParty/UmiOCR-data/.settings";
+    configPath = executableDir + "/config.ini";
+    ocrexePath = executableDir + "/thirdParty/Umi-OCR.exe";
+    saveShotPath = executableDir + "/saveShots/shot.png";
+    logPath = executableDir + "/log.txt";
+    popOcrWindow=false;
+    ocrCommands = {"--help"};
+
+    QSettings setting(configPath, QSettings::IniFormat);
 
     QVariant id = setting.value("Global/transID");
-    config::fanyiID = id.toString().toStdString();
+    fanyiID = id.toString().toStdString();
 
     QVariant key = setting.value("Global/transKey");
-    config::fanyiKey = id.toString().toStdString();
+    fanyiKey = id.toString().toStdString();
 
     QVariant ocrLanguage = setting.value("Global/ocrLanguage");
     switch(ocrLanguage.toInt())
     {
     case 1:
-        config::initOcrLanguage=config::Language::zh;
+        initOcrLanguage=Language::zh;
         break;
     case 2:
-        config::initOcrLanguage=config::Language::en;
+        initOcrLanguage=Language::en;
         break;
     case 3:
-        config::initOcrLanguage=config::Language::jp;
+        initOcrLanguage=::Language::jp;
         break;
     default:
-        config::initOcrLanguage=config::Language::none;
+        initOcrLanguage=::Language::none;
         break;
     }
 
@@ -66,22 +80,25 @@ inline static void readConfig(QString path)
     switch(transLanguage.toInt())
     {
     case 1:
-        config::initTransLanguage=config::Language::zh;
+        initTransLanguage=Language::zh;
         break;
     case 2:
-        config::initTransLanguage=config::Language::en;
+        initTransLanguage=Language::en;
         break;
     case 3:
-        config::initTransLanguage=config::Language::jp;
+        initTransLanguage=Language::jp;
         break;
     default:
-        config::initTransLanguage=config::Language::none;
+        initTransLanguage=Language::none;
         break;
     }
 }
-
 };
 
 
+namespace config
+{
+    static inline Config cfg;
+};
 
 #endif // CONFIG_HPP

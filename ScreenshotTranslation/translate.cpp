@@ -7,8 +7,8 @@
 #include "rapidjson/pointer.h"
 #include "rapidjson/stream.h"
 #include <random>
-#include <QDebug>
 #include <QRegularExpression>
+#include "common.hpp"
 
 #define MIN 0
 #define MAX 4294967295
@@ -27,7 +27,7 @@ void Translate::doTranslate(const string &text, Language languageTranslateFrom, 
     std::uniform_int_distribution<unsigned int> distrib(MIN, MAX);
 
     string salt = std::to_string(distrib(gen));
-    string sign = fanyiID+text+salt+fanyiKey;
+    string sign = config::cfg.fanyiID+text+salt+config::cfg.fanyiKey;
     unsigned char digest[MD5_DIGEST_LENGTH];
     MD5_CTX context;
     MD5_Init(&context); // 初始化 MD5 上下文
@@ -39,7 +39,7 @@ void Translate::doTranslate(const string &text, Language languageTranslateFrom, 
     }// 计算最终的 MD5 值
 
     //最终请求url
-    string rqURL = "/api/trans/vip/translate?appid=" + fanyiID
+    string rqURL = "/api/trans/vip/translate?appid=" + config::cfg.fanyiID
                    + "&q=" + text
                    +"&from=" + (languageTranslateFrom==Language::zh?"zh" : (languageTranslateFrom==Language::en?"en":"jp"))
                    +"&to=" +(languageTranslateTo==Language::zh?"zh" : (languageTranslateTo==Language::en?"en":"jp"))
@@ -50,8 +50,9 @@ void Translate::doTranslate(const string &text, Language languageTranslateFrom, 
     try
     {
         //http请求
-        httplib::Client cli(fanyiURL);
+        httplib::Client cli(config::cfg.fanyiURL);
         auto rep = cli.Get(rqURL.c_str());
+        qDebug()<<rep->status;
 
         if(rep && rep->status == 200)
         {
@@ -74,39 +75,38 @@ void Translate::doTranslate(const string &text, Language languageTranslateFrom, 
                         }
                         else
                         {
-                            rslt = "wrong translate...";
+                            rslt = "ERROR: wrong translate...";
                         }
                     }
                     else
                     {
-                        rslt = "wrong translate...";
+                        rslt = "ERROR: wrong translate...";
                     }
                 }
                 else
                 {
-                    rslt = "wrong translate...";
+                    rslt = "ERROR: wrong translate...";
                 }
             }
             else
             {
-                rslt = "wrong translate...";
+                rslt = "ERROR: wrong translate...";
             }
         }
         else
         {
             rslt = QString("ERROR: GET response code: %1").arg(rep->status);
+            spdlog::error("【" + nowStr() + "】	" + rslt.toStdString());
         }
         emit setStatus(rslt);
     }
     catch(std::runtime_error& e)
     {
-        qDebug()<<"parse json error:    "<<e.what();
-        //emit setStatus("parse json error:    " + e.what());
+        spdlog::error("【" + nowStr() + "】	" + "parse json error:" + e.what());
     }
     catch (const std::exception& e)
     {
-        qDebug()<<e.what();
-        //emit setStatus("parse json error:    " + e.what());
+        spdlog::error("【" + nowStr() + "】	" + e.what());
     }
 
 }

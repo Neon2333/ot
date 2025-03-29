@@ -15,7 +15,7 @@ public:
     Translate();
     ~Translate();
 
-    void doTranslate(const string& text, config::Language languageTranslateFrom, config::Language languageTranslateTo=config::Language::zh);
+    void doTranslate(const string& text, Language languageTranslateFrom, Language languageTranslateTo=Language::zh);
 
 signals:
     void translateFinished(QString result);

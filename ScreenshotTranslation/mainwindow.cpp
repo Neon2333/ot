@@ -1,14 +1,15 @@
 #include "mainwindow.h"
 #include <vector>
-#include <QDebug>
 #include <QCoreApplication>
+#include "common.hpp"
+
 
 MainWindow::MainWindow(QWidget *parent)
 {
     initUI();
 
-    setOcrLanguage(config::initOcrLanguage);
-    setTransLanguage(config::initTransLanguage);
+    setOcrLanguage(config::cfg.initOcrLanguage);
+    setTransLanguage(config::cfg.initTransLanguage);
 
     m_shot = new ScreenshotWidget;
     m_shot->hide();
@@ -66,14 +67,17 @@ MainWindow::MainWindow(QWidget *parent)
 
     //换识别语言重启ocr后，启动截图
     connect(m_ocr, &Ocr::quitOcrFinished, this, [this](){
-        qDebug()<<"quit ocr finished...";
         this->hide();
         m_shot->show();//显示截图控件，按下鼠标进行截图
     });
 
 }
 
-MainWindow::~MainWindow() { close();}
+MainWindow::~MainWindow()
+{
+    Close();
+    spdlog::info("【" + nowStr() + "】	"+ "ot quit");
+}
 
 void MainWindow::setStatus(QString status)
 {
@@ -139,9 +143,6 @@ void MainWindow::initUI()
     m_label_ocrLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
                                                  "background-color:rgba(81,118,147,255);"
                                                  "color:rgba(255,255,255,255);}"));
-    m_label_status->setStyleSheet(QString("QLabel{border-radius:5px;"
-                                          // "background-color:rgba(255,255,255,255);"
-                                          "color:rgba(255,0,0,255);}"));
     m_label_transLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
                                                "background-color:rgba(81,118,147,255);"
                                                "color:rgba(255,255,255,255);}"));
@@ -159,7 +160,7 @@ void MainWindow::installGlobalEventFilter()
     qApp->installEventFilter(this);
 }
 
-void MainWindow::setOcrLanguage(config::Language language)
+void MainWindow::setOcrLanguage(Language language)
 {
     if(m_ocrLanguage==language)
     {
@@ -170,13 +171,13 @@ void MainWindow::setOcrLanguage(config::Language language)
 
     switch(m_ocrLanguage)
     {
-    case config::Language::zh:
+    case Language::zh:
         m_label_ocrLanguage->setText("zh");
         break;
-    case config::Language::en:
+    case Language::en:
         m_label_ocrLanguage->setText("en");
         break;
-    case config::Language::jp:
+    case Language::jp:
         m_label_ocrLanguage->setText("jp");
         break;
     default: break;
@@ -185,7 +186,7 @@ void MainWindow::setOcrLanguage(config::Language language)
     if(m_ocr) m_ocr->quitOcr(); //修改语言后退出ocr，待startOcr重启
 }
 
-void MainWindow::setTransLanguage(config::Language language)
+void MainWindow::setTransLanguage(Language language)
 {
     if(m_transLanguage==language)
     {
@@ -195,13 +196,13 @@ void MainWindow::setTransLanguage(config::Language language)
 
     switch(m_transLanguage)
     {
-    case config::Language::zh:
+    case Language::zh:
         m_label_transLanguage->setText("zh");
         break;
-    case config::Language::en:
+    case Language::en:
         m_label_transLanguage->setText("en");
         break;
-    case config::Language::jp:
+    case Language::jp:
         m_label_transLanguage->setText("jp");
         break;
     default: break;
@@ -209,17 +210,17 @@ void MainWindow::setTransLanguage(config::Language language)
 }
 
 
-config::Language MainWindow::ocrLanguage()
+Language MainWindow::ocrLanguage()
 {
     return m_ocrLanguage;
 }
 
-void MainWindow::close()
+void MainWindow::Close()
 {
     if(m_ocr)
     {
         m_ocr->quitOcr();
-        m_ocr->useConfig(config::Language::zh);//设定下次启动ocr为zh
+        m_ocr->useConfig(Language::zh);//设定下次启动ocr为zh
         m_ocr->deleteLater();
         m_ocr=nullptr;
     }
@@ -250,20 +251,20 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event)
             }
             else if(keyEvent->key() == Qt::Key_1)
             {
-                setOcrLanguage(config::Language::zh);
-                setTransLanguage(config::Language::zh);
+                setOcrLanguage(Language::zh);
+                setTransLanguage(Language::zh);
                 return true; // 表示事件已处理
             }
             else if(keyEvent->key() == Qt::Key_2)
             {
-                setOcrLanguage(config::Language::en);
-                setTransLanguage(config::Language::zh);
+                setOcrLanguage(Language::en);
+                setTransLanguage(Language::zh);
                 return true;
             }
             else if(keyEvent->key() == Qt::Key_3)
             {
-                setOcrLanguage(config::Language::jp);
-                setTransLanguage(config::Language::zh);
+                setOcrLanguage(Language::jp);
+                setTransLanguage(Language::zh);
                 return true;
             }
         }

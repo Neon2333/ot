@@ -14,7 +14,7 @@ Ocr::Ocr(vector<QString> commands)
     }
 
     m_ocrProcess = new QProcess;
-    m_ocrProcess->setProgram(config::ocrexePath);
+    m_ocrProcess->setProgram(config::cfg.ocrexePath);
     m_ocrProcess->setArguments(m_command);
 
 
@@ -69,8 +69,7 @@ void Ocr::quitOcr()
     if(m_quitProcess!=nullptr)   m_quitProcess->deleteLater();
     m_quitProcess = new QProcess;
     connect(m_quitProcess, &QProcess::finished, this, &Ocr::quitOcrFinished);
-    m_quitProcess->setProgram(config::ocrexePath);
-    qDebug()<<config::ocrexePath;
+    m_quitProcess->setProgram(config::cfg.ocrexePath);
     QStringList quitOcr;
     // restartOcr << "--quit" << "--show" << "--hide";
     quitOcr << "--quit";
@@ -89,27 +88,27 @@ QProcess *Ocr::process()
     return m_ocrProcess;
 }
 
-void Ocr::useConfig(config::Language language)
+void Ocr::useConfig(Language language)
 {
-    QSettings setting(config::umiocrConfig, QSettings::IniFormat);
+    QSettings setting(config::cfg.umiocrConfig, QSettings::IniFormat);
     //不弹出ocr窗口
     QVariant isPopOcrWindow = setting.value("ScreenshotOCR/action.popMainWindow");
     if(isPopOcrWindow.toBool())
     {
-        setting.setValue("ScreenshotOCR/action.popMainWindow", config::popOcrWindow);
+        setting.setValue("ScreenshotOCR/action.popMainWindow", config::cfg.popOcrWindow);
     }
     //设定识别语言
     QVariant ocrLanguage = setting.value("ScreenshotOCR/ocr.language");
     switch(language)
     {
-    case config::Language::zh:
-        setting.setValue("ScreenshotOCR/ocr.language", config::ocrLanguageModelCh);
+    case Language::zh:
+        setting.setValue("ScreenshotOCR/ocr.language", config::cfg.ocrLanguageModelCh);
         break;
-    case config::Language::en:
-        setting.setValue("ScreenshotOCR/ocr.language", config::ocrLanguageModelEn);
+    case Language::en:
+        setting.setValue("ScreenshotOCR/ocr.language", config::cfg.ocrLanguageModelEn);
         break;
-    case config::Language::jp:
-        setting.setValue("ScreenshotOCR/ocr.language", config::ocrLanguageModelJp);
+    case Language::jp:
+        setting.setValue("ScreenshotOCR/ocr.language", config::cfg.ocrLanguageModelJp);
         break;
     default:
         break;
@@ -126,7 +125,7 @@ void Ocr::setCommands(vector<QString> commands)
 
     if(m_ocrProcess!=nullptr)   m_ocrProcess->deleteLater();
     m_ocrProcess = new QProcess;
-    m_ocrProcess->setProgram(config::ocrexePath);
+    m_ocrProcess->setProgram(config::cfg.ocrexePath);
     m_ocrProcess->setArguments(m_command);
 
     connect(m_ocrProcess, &QProcess::finished, [=](int code){

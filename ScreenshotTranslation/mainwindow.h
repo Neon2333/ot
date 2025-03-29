@@ -34,16 +34,16 @@ private:
     QVBoxLayout* m_vlay = nullptr;
     Ocr* m_ocr = nullptr;
     ScreenshotWidget* m_shot=nullptr;
-    config::Language m_ocrLanguage{config::Language::none};
-    config::Language m_transLanguage{config::Language::none};
+    Language m_ocrLanguage{Language::none};
+    Language m_transLanguage{Language::none};
     Translate* m_translate;
 
     void initUI();
     void installGlobalEventFilter();
-    void setOcrLanguage(config::Language language);
-    void setTransLanguage(config::Language language);
-    config::Language ocrLanguage();
-    void close();
+    void setOcrLanguage(Language language);
+    void setTransLanguage(Language language);
+    Language ocrLanguage();
+    void Close();
     void setStatus(QString status);
 
 protected:
