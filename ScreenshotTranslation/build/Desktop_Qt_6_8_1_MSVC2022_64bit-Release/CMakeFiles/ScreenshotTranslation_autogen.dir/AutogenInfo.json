@@ -308,7 +308,8 @@
 		"D:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"D:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"D:/Qt/6.8.1/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/res.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation",
 	"CROSS_CONFIG" : false,

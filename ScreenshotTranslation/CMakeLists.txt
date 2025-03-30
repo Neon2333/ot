@@ -28,6 +28,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         screenshotwidget.h screenshotwidget.cpp
         translate.h translate.cpp
         common.hpp
+        res.qrc
 
 
 

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/mainIcon.jpg</file>
+        <file>icons/volume.svg</file>
+    </qresource>
+</RCC>

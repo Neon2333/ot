@@ -77,25 +77,25 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 98,
+				"line" : 99,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 53,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 100,
+				"line" : 101,
 				"parent" : 0
 			},
 			{
@@ -277,7 +277,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 97,
+				"line" : 98,
 				"parent" : 0
 			}
 		]
@@ -400,18 +400,19 @@
 				5,
 				7,
 				11,
-				13
+				13,
+				18
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "ScreenshotTranslation_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "ScreenshotTranslation_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ScreenshotTranslation_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "ScreenshotTranslation::@6890427a1f51a3e7e1df",
@@ -537,7 +538,8 @@
 				5,
 				7,
 				11,
-				13
+				13,
+				18
 			]
 		},
 		{
@@ -551,7 +553,7 @@
 				10,
 				12,
 				14,
-				15
+				16
 			]
 		},
 		{
@@ -562,17 +564,25 @@
 			]
 		},
 		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				15
+			]
+		},
+		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				16
+				17
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				17
+				19,
+				20
 			]
 		}
 	],
@@ -662,6 +672,11 @@
 			"sourceGroupIndex" : 1
 		},
 		{
+			"backtrace" : 4,
+			"path" : "res.qrc",
+			"sourceGroupIndex" : 3
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/include/ui_autofontsizelabel.h",
@@ -671,13 +686,26 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/EWIEGA46WW/qrc_res.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/EWIEGA46WW/qrc_res.cpp.rule",
+			"sourceGroupIndex" : 5
 		}
 	],
 	"type" : "EXECUTABLE"

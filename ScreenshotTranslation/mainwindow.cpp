@@ -87,16 +87,37 @@ void MainWindow::setStatus(QString status)
 void MainWindow::initUI()
 {
     // setWindowFlags(Qt::FramelessWindowHint);
+    setWindowIcon(QIcon(":/images/mainIcon.jpg"));
 
     resize(600,150);
     move(800,300);
 
     m_label_textOCR = new AutoFontSizeLabel(this);
     m_label_textTran = new AutoFontSizeLabel(this);
+
+    m_btn_volume = new QPushButton(this);
+    m_btn_volume->setFixedSize(40,40);
+    m_btn_volume->setIcon(QIcon(":/icons/volume.svg"));
+    m_btn_volume->setIconSize(QSize(20,20));
+    m_label_model = new QLabel(this);
+    m_label_model->setFixedSize(40,40);
+    m_label_model->setText(QString("normal"));
+    m_label_model->setAlignment(Qt::AlignCenter);
+
+    m_hlayTopCenter = new QVBoxLayout;
+    m_hlayTopCenter ->setSpacing(30);
+    m_hlayTopCenter ->setContentsMargins(4,4,4,4);
+    m_hlayTopCenter->addWidget(m_btn_volume);
+    m_hlayTopCenter->addWidget(m_label_model);
+
+    m_widget_center = new QWidget(this);
+    m_widget_center->setLayout(m_hlayTopCenter);
+
     m_hlayTop = new QHBoxLayout;
-    m_hlayTop->setSpacing(20);
+    m_hlayTop->setSpacing(4);
     m_hlayTop->setContentsMargins(0,0,0,0);
     m_hlayTop->addWidget(m_label_textOCR, 1);
+    m_hlayTop->addWidget(m_widget_center);
     m_hlayTop->addWidget(m_label_textTran, 1);
 
 
@@ -131,21 +152,37 @@ void MainWindow::initUI()
     m_vlay->setSpacing(4);
     m_vlay->setContentsMargins(4,4,4,4);
 
-    const QString qssStr = QString("QLabel{border-radius:5px;"
-                                   "background-color:rgba(148,165,141,255);"
-                                   "color:rgba(255,255,255,255);}");
+    //this->setStyleSheet(QString("QWidget{backround-color:white;}"));
+    QPalette pal(this->palette());
+    pal.setColor(QPalette::Window, Qt::white);
+    this->setAutoFillBackground(true);
+    this->setPalette(pal);
+
     m_label_textOCR->setStyleSheet(QString("QLabel{border-radius:5px;"
                                             "background-color:rgba(148,165,141,255);"
                                             "color:rgba(255,255,255,255);}"));
+
+    m_btn_volume->setStyleSheet(QString("QPushButton{border:none;border-radius:20;background:white;color:black;}"
+                                        "QPushButton:hover{background:lightblue;}"));
+
+    // m_label_model->setStyleSheet(QString("QLabel{border-radius:5px;"
+    //                                              "background-color:rgba(81,118,147,255);"
+    //                                              "color:rgba(255,255,255,255);}"));
+
+    m_widget_center->setStyleSheet(QString("QWidget{border:1px;border-radius:5px;background-color:gray;font:bold 11px;}"));
+
     m_label_textTran->setStyleSheet(QString("QLabel{border-radius:5px;"
                                             "background-color:rgba(251,210,106,255);"
                                             "color:rgba(255,255,255,255);}"));
+
     m_label_ocrLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
                                                  "background-color:rgba(81,118,147,255);"
                                                  "color:rgba(255,255,255,255);}"));
+
     m_label_transLanguage->setStyleSheet(QString("QLabel{border-radius:5px;"
                                                "background-color:rgba(81,118,147,255);"
                                                "color:rgba(255,255,255,255);}"));
+
     m_label_status->setStyleSheet(QString("QLabel{border-radius:5px;"
                                           "background-color:rgba(129,216,208,255);"
                                           "color:rgba(255,255,255,255);}"));

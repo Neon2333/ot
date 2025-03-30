@@ -187,8 +187,8 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabe
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qwidget.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.h
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.cpp
- uic:ui_autofontsizelabel.h
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/common.hpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/translate.h
  mmc:Q_OBJECT
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/QCoreApplication
@@ -317,7 +317,8 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/translate.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/qyieldcpu.h
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/translate.h
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.cpp
+ uic:ui_autofontsizelabel.h
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mmc:Q_OBJECT
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtCore/QCoreApplication
@@ -514,9 +515,11 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QHBoxLayout
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QLabel
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QMainWindow
+ mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QPushButton
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QSpacerItem
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QVBoxLayout
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QWidget
+ mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qapplication.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qboxlayout.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qframe.h
@@ -525,6 +528,7 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qlayout.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qlayoutitem.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qmainwindow.h
+ mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qpushbutton.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtabwidget.h
  mdp:D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgets-config.h
@@ -861,7 +865,6 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget
  mdp:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/main.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/mainwindow.cpp
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.cpp
+E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.cpp
 E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/translate.cpp
-E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/common.hpp

@@ -5,7 +5,8 @@
 #include "autofontsizelabel.h"
 #include <QHBoxLayout>
 #include <QVBoxLayout>
-#include<QSpacerItem>
+#include <QSpacerItem>
+#include <QPushButton>
 #include "ocr.h"
 #include "screenshotwidget.h"
 #include "translate.h"
@@ -21,6 +22,9 @@ public:
 
 private:
     AutoFontSizeLabel* m_label_textOCR = nullptr;
+    QWidget* m_widget_center = nullptr;
+    QPushButton* m_btn_volume = nullptr;
+    QLabel* m_label_model = nullptr;
     AutoFontSizeLabel* m_label_textTran = nullptr;
     QLabel* m_label_ocrLanguage = nullptr;
     QSpacerItem* m_placeholderLeft = nullptr;
@@ -30,6 +34,7 @@ private:
 
     QWidget* content = nullptr;
     QHBoxLayout* m_hlayTop = nullptr;
+    QVBoxLayout* m_hlayTopCenter = nullptr;
     QHBoxLayout* m_hlayBottom = nullptr;
     QVBoxLayout* m_vlay = nullptr;
     Ocr* m_ocr = nullptr;

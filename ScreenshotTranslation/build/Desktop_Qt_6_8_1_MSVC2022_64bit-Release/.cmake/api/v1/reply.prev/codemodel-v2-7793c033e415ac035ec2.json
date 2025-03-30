@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Release-3181197ce9805cc05497.json",
+					"jsonFile" : "directory-.-Release-773d067468f6a27dcc2f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ScreenshotTranslation::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ScreenshotTranslation-Release-4f1d0a0d95323d2e7c58.json",
+					"jsonFile" : "target-ScreenshotTranslation-Release-df7a8f8d13b28e8d628c.json",
 					"name" : "ScreenshotTranslation",
 					"projectIndex" : 0
 				},

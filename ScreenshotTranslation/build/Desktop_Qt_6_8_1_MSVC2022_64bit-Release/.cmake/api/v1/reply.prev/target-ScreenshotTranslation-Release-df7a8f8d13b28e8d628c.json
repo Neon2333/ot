@@ -77,25 +77,25 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 69,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 97,
-				"parent" : 0
-			},
-			{
-				"command" : 6,
-				"file" : 1,
-				"line" : 52,
-				"parent" : 0
-			},
-			{
-				"command" : 6,
-				"file" : 1,
 				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 101,
 				"parent" : 0
 			},
 			{
@@ -277,7 +277,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 96,
+				"line" : 98,
 				"parent" : 0
 			}
 		]
@@ -354,7 +354,7 @@
 				},
 				{
 					"backtrace" : 42,
-					"path" : "E:/WorkSpace/Coding/ot/ScreenshotTranslation/thirdParty/include"
+					"path" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/thirdParty/include"
 				},
 				{
 					"backtrace" : 16,
@@ -400,7 +400,8 @@
 				5,
 				7,
 				11,
-				13
+				13,
+				18
 			]
 		}
 	],
@@ -443,7 +444,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "-LIBPATH:E:\\WorkSpace\\Coding\\ot\\ScreenshotTranslation\\thirdParty\\lib\\openssl",
+				"fragment" : "-LIBPATH:E:\\WorkSpace\\Coding\\ScreenshotTranslation\\ScreenshotTranslation\\thirdParty\\lib\\openssl",
 				"role" : "libraryPath"
 			},
 			{
@@ -537,7 +538,8 @@
 				5,
 				7,
 				11,
-				13
+				13,
+				18
 			]
 		},
 		{
@@ -550,7 +552,8 @@
 				9,
 				10,
 				12,
-				14
+				14,
+				16
 			]
 		},
 		{
@@ -561,17 +564,25 @@
 			]
 		},
 		{
-			"name" : "",
+			"name" : "Resources",
 			"sourceIndexes" : 
 			[
 				15
 			]
 		},
 		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				17
+			]
+		},
+		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				16
+				19,
+				20
 			]
 		}
 	],
@@ -581,7 +592,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -656,22 +667,45 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/include/ui_autofontsizelabel.h",
+			"backtrace" : 4,
+			"path" : "common.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp",
+			"backtrace" : 4,
+			"path" : "res.qrc",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/include/ui_autofontsizelabel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp",
 			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/EWIEGA46WW/qrc_res.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/timestamp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/EWIEGA46WW/qrc_res.cpp.rule",
+			"sourceGroupIndex" : 5
 		}
 	],
 	"type" : "EXECUTABLE"

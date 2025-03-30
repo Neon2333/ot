@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen",
+	"CMAKE_BINARY_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation",
+	"CMAKE_SOURCE_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/ScreenshotTranslation_autogen/include",
+	"INPUTS" : 
+	[
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/images/mainIcon.jpg",
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/icons/volume.svg"
+	],
+	"LOCK_FILE" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/CMakeFiles/ScreenshotTranslation_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.8.1/msvc2022_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/CMakeFiles/ScreenshotTranslation_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/res.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
