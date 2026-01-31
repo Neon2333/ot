@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -29,21 +29,14 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         translate.h translate.cpp
         common.hpp
         res.qrc
-
-
-
+        pronounce.h pronounce.cpp
+        word.hpp
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET ScreenshotTranslation APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
         add_library(ScreenshotTranslation SHARED
             ${PROJECT_SOURCES}
         )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(ScreenshotTranslation
             ${PROJECT_SOURCES}
@@ -51,11 +44,8 @@ else()
     endif()
 endif()
 
-target_link_libraries(ScreenshotTranslation PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(ScreenshotTranslation PRIVATE Qt${QT_VERSION_MAJOR}::Widgets  Qt${QT_VERSION_MAJOR}::Multimedia)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.ScreenshotTranslation)
 endif()
@@ -74,28 +64,30 @@ install(TARGETS ScreenshotTranslation
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-
-# find_library(JSON_LIB jsoncpp PATHS ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/lib/jsoncpp)
-# if(NOT JSON_LIB)
-#    message(FATAL_ERROR "JSON_LIB not found")
-# endif()
-
-# find_library(CRYPTO_LIB crypto PATHS ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/lib/openssl)
-# if(NOT CRYPTO_LIB)
-#    message(FATAL_ERROR "CRYPTO_LIB not found")
-# endif()
-
-# find_library(SSL_LIB ssl PATHS ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/lib/openssl)
-# if(NOT SSL_LIB)
-#    message(FATAL_ERROR "SSL_LIB not found")
-# endif()
-
-
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(ScreenshotTranslation)
 endif()
 
+
+
+
 target_include_directories(ScreenshotTranslation PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/include)#指定头文件路径
 target_link_directories(ScreenshotTranslation PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/lib/openssl)
-# target_link_libraries(ScreenshotTranslation PRIVATE ${JSON_LIB} ${SSL_LIB ${CRYPTO_LIB}})#链接库文件
-target_link_libraries(ScreenshotTranslation PRIVATE libcrypto libssl)#链接库文件
+target_link_directories(ScreenshotTranslation PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/thirdParty/lib/curl)
+target_link_libraries(ScreenshotTranslation PRIVATE libcrypto libssl libcurl_imp)#链接库文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

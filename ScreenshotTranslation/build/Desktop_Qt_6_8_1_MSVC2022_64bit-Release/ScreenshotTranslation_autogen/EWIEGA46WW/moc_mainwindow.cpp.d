@@ -179,7 +179,9 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qrgba64.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qscreen.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qscreen_platform.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextcursor.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextdocument.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextformat.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtextoption.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qtguiexports.h \
@@ -189,15 +191,26 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qvectornd.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/QAudioOutput \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/QMediaPlayer \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qaudio.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qaudiooutput.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qmediaplayer.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qtaudio.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qtmultimedia-config.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qtmultimediaexports.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtMultimedia/qtmultimediaglobal.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QApplication \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QHBoxLayout \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QLabel \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QMainWindow \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QPushButton \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QSpacerItem \
+  D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QTextEdit \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QVBoxLayout \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/QWidget \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qabstractbutton.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qabstractscrollarea.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qapplication.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qboxlayout.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qframe.h \
@@ -209,6 +222,7 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qpushbutton.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qsizepolicy.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtabwidget.h \
+  D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtextedit.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   D:/Qt/6.8.1/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -216,5 +230,6 @@ E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/autofontsizelabel.h \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/config.hpp \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/ocr.h \
+  E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/pronounce.h \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/screenshotwidget.h \
   E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/translate.h

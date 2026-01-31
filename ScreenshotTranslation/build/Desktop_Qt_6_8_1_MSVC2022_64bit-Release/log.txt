@@ -1,62 +1,381 @@
-【2025-03-30 01:59:12】	ot run
-【2025-03-30 01:59:33】	ot quit
-【2025-03-30 02:00:54】	ot run
-【2025-03-30 02:01:15】	ot quit
-【2025-03-30 21:47:55】	ot run
-【2025-03-30 21:48:17】	ot quit
-【2025-03-30 22:59:35】	ot run
-【2025-03-30 22:59:40】	ot quit
-【2025-03-30 23:00:16】	ot run
-【2025-03-30 23:00:25】	ot quit
-【2025-03-30 23:01:13】	ot run
-【2025-03-30 23:01:19】	ot quit
-【2025-03-30 23:02:05】	ot run
-【2025-03-30 23:03:21】	ot quit
-【2025-03-31 00:15:02】	ot run
-【2025-03-31 00:21:51】	ot quit
-【2025-03-31 00:27:03】	ot run
-【2025-03-31 00:27:10】	ot quit
-【2025-03-31 00:27:56】	ot run
-【2025-03-31 00:28:05】	ot quit
-【2025-03-31 00:28:45】	ot run
-【2025-03-31 00:28:48】	ot quit
-【2025-03-31 00:29:42】	ot run
-【2025-03-31 00:29:45】	ot quit
-【2025-03-31 00:30:12】	ot run
-【2025-03-31 00:30:14】	ot quit
-【2025-03-31 00:30:41】	ot run
-【2025-03-31 00:30:44】	ot quit
-【2025-03-31 00:31:00】	ot run
-【2025-03-31 00:31:22】	ot quit
-【2025-03-31 00:36:15】	ot run
-【2025-03-31 00:36:24】	ot quit
-【2025-03-31 00:37:03】	ot run
-【2025-03-31 00:37:11】	ot quit
-【2025-03-31 00:37:35】	ot run
-【2025-03-31 00:45:40】	ot quit
-【2025-03-31 00:54:14】	ot run
-【2025-03-31 00:54:39】	ot quit
-【2025-03-31 00:54:54】	ot run
-【2025-03-31 00:55:02】	ot quit
-【2025-03-31 00:55:16】	ot run
-【2025-03-31 00:55:30】	ot quit
-【2025-03-31 00:56:02】	ot run
-【2025-03-31 00:56:35】	ot quit
-【2025-03-31 00:57:14】	ot run
-【2025-03-31 00:57:38】	ot quit
-【2025-03-31 00:59:50】	ot run
-【2025-03-31 00:59:59】	ot quit
-【2025-03-31 01:00:53】	ot run
-【2025-03-31 01:01:00】	ot quit
-【2025-03-31 01:01:20】	ot run
-【2025-03-31 01:01:37】	ot quit
-【2025-03-31 01:03:43】	ot run
-【2025-03-31 01:05:51】	ot quit
-【2025-03-31 01:06:24】	ot run
-【2025-03-31 01:06:27】	ot quit
-【2025-03-31 01:06:41】	ot run
-【2025-03-31 01:07:07】	ot quit
-【2025-03-31 01:08:02】	ot run
-【2025-03-31 01:08:34】	ot quit
-【2025-03-31 01:29:57】	ot run
-【2025-03-31 01:31:06】	ot quit
+【2025-04-22 00:58:02】	ot run
+【2025-04-22 00:58:05】    save sound file succeed: how are you.mp3
+【2025-04-22 00:58:05】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 00:58:41】	ot quit
+【2025-04-22 00:59:54】	ot run
+【2025-04-22 00:59:56】    save sound file succeed: how are you.mp3
+【2025-04-22 00:59:57】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 01:00:01】	ot quit
+【2025-04-22 01:02:52】	ot run
+【2025-04-22 01:02:55】    save sound file succeed: how are you.mp3
+【2025-04-22 01:02:56】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 01:02:57】    save sound file succeed: how are you.mp3
+【2025-04-22 01:02:57】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 01:02:59】    save sound file succeed: how are you.mp3
+【2025-04-22 01:02:59】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 01:03:00】    save sound file succeed: how are you.mp3
+【2025-04-22 01:03:00】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-22 01:03:02】    save sound file succeed: how are you.mp3
+【2025-04-22 01:03:02】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 21:19:00】	ot run
+【2025-04-23 21:19:39】	ot quit
+【2025-04-23 21:21:00】	ot run
+【2025-04-23 21:23:59】	ot quit
+【2025-04-23 21:53:12】	ot run
+【2025-04-23 21:56:06】	ot quit
+【2025-04-23 22:03:25】	ot run
+【2025-04-23 22:03:46】	ot quit
+【2025-04-23 22:26:00】	ot run
+【2025-04-23 22:28:50】	ot quit
+【2025-04-23 22:29:10】	ot run
+【2025-04-23 23:03:11】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-23 23:03:14】	ot quit
+【2025-04-23 23:11:45】	ot run
+【2025-04-23 23:12:00】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-23 23:12:15】	ot quit
+【2025-04-23 23:15:35】	ot run
+【2025-04-23 23:15:48】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-23 23:16:01】	ot quit
+【2025-04-23 23:16:20】	ot run
+【2025-04-23 23:16:32】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-23 23:16:34】	ot quit
+【2025-04-23 23:24:57】	ot run
+【2025-04-23 23:25:14】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:15】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:17】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:17】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:18】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:18】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:20】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:20】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:22】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:22】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:23】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:23】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:25】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:25】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:27】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:27】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:28】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:28】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:30】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:30】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:31】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:31】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:33】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:33】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:35】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:35】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:36】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:36】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:38】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:38】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:40】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:40】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:41】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:41】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:43】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:43】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:45】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:45】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:46】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:46】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:48】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:48】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:50】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:50】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:51】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:51】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:53】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:53】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:54】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:54】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:56】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:56】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:58】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:58】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:25:59】    save sound file succeed: how are you.mp3
+【2025-04-23 23:25:59】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:26:01】    save sound file succeed: how are you.mp3
+【2025-04-23 23:26:01】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:26:03】    save sound file succeed: how are you.mp3
+【2025-04-23 23:26:03】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:26:04】    save sound file succeed: how are you.mp3
+【2025-04-23 23:26:04】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:26:06】    save sound file succeed: how are you.mp3
+【2025-04-23 23:26:06】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-23 23:26:31】	ot run
+【2025-04-23 23:26:35】	ot quit
+【2025-04-23 23:27:07】	ot run
+【2025-04-23 23:27:15】	ot quit
+【2025-04-23 23:29:42】	ot run
+【2025-04-23 23:29:48】	ot quit
+【2025-04-23 23:36:29】	ot run
+【2025-04-23 23:38:49】	ot quit
+【2025-04-23 23:38:52】	ot run
+【2025-04-23 23:39:39】	ot quit
+【2025-04-23 23:52:41】	ot run
+【2025-04-23 23:55:11】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-23 23:56:05】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-23 23:56:51】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-23 23:58:04】	ot quit
+【2025-04-24 00:03:43】	ot run
+【2025-04-24 00:03:54】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-24 00:17:36】	ot quit
+【2025-04-24 00:18:14】	ot run
+【2025-04-24 00:25:22】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-24 00:25:40】	ot quit
+【2025-04-24 00:25:46】	ot run
+【2025-04-24 00:25:49】    json格式不对
+【2025-04-24 00:25:57】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-24 00:26:09】	ot quit
+【2025-04-24 00:28:06】	ot run
+【2025-04-24 00:28:13】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-24 00:28:24】	ot quit
+【2025-04-24 00:29:42】	ot run
+【2025-04-24 00:30:02】    curl_easy_perform() failed:URL using bad/illegal format or missing URL
+【2025-04-24 00:30:07】	ot quit
+【2025-04-24 00:30:47】	ot run
+【2025-04-24 00:30:51】    save sound file succeed: how%20are%20you.mp3
+【2025-04-24 00:30:51】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-24 00:30:53】    save sound file succeed: how%20are%20you.mp3
+【2025-04-24 00:30:53】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-24 00:30:55】    save sound file succeed: how%20are%20you.mp3
+【2025-04-24 00:30:55】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-24 00:30:56】    save sound file succeed: how%20are%20you.mp3
+【2025-04-24 00:30:56】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-24 00:36:29】	ot run
+【2025-04-24 00:40:14】	ot quit
+【2025-04-24 00:40:36】	ot run
+【2025-04-24 00:42:41】	ot quit
+【2025-04-24 00:46:58】	ot run
+【2025-04-24 00:47:28】	ot quit
+【2025-04-24 00:47:51】	ot run
+【2025-04-24 00:48:18】	ot quit
+【2025-04-24 00:48:30】	ot run
+【2025-04-24 00:48:39】	ot quit
+【2025-04-24 00:49:18】	ot run
+【2025-04-24 00:49:22】	ot quit
+【2025-04-24 00:49:41】	ot run
+【2025-04-24 00:49:44】	ot quit
+【2025-04-24 00:50:29】	ot run
+【2025-04-24 00:50:49】	ot quit
+【2025-04-24 00:51:54】	ot run
+【2025-04-24 00:52:04】	ot quit
+【2025-04-24 00:53:34】	ot run
+【2025-04-24 00:53:51】	ot quit
+【2025-04-24 19:38:16】	ot run
+【2025-04-24 19:38:27】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 19:39:37】	ot quit
+【2025-04-24 19:39:49】	ot run
+【2025-04-24 20:56:31】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:56:33】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:16】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:17】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:18】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:19】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:20】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:21】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:21】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:22】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:22】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:23】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:23】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:23】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:24】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:24】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 20:57:25】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 21:14:26】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 21:14:27】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 21:14:29】    curl_easy_perform() failed:Could not resolve hostname
+【2025-04-24 23:20:45】	ot quit
+【2025-04-24 23:28:55】	ot run
+【2025-04-24 23:30:54】	ot quit
+【2025-04-24 23:31:30】	ot run
+【2025-04-24 23:32:09】	ot quit
+【2025-04-24 23:33:20】	ot run
+【2025-04-24 23:35:41】	ot quit
+【2025-04-24 23:35:51】	ot run
+【2025-04-24 23:35:54】	ot quit
+【2025-04-24 23:36:11】	ot run
+【2025-04-24 23:36:19】	ot quit
+【2025-04-24 23:36:34】	ot run
+【2025-04-24 23:36:36】	ot quit
+【2025-04-24 23:36:55】	ot run
+【2025-04-24 23:37:00】	ot quit
+【2025-04-24 23:37:23】	ot run
+【2025-04-24 23:37:30】	ot quit
+【2025-04-24 23:39:01】	ot run
+【2025-04-24 23:39:08】	ot quit
+【2025-04-24 23:39:54】	ot run
+【2025-04-24 23:40:38】	ot quit
+【2025-04-24 23:41:52】	ot run
+【2025-04-24 23:41:57】	ot quit
+【2025-04-24 23:42:21】	ot run
+【2025-04-24 23:42:32】	ot quit
+【2025-04-24 23:43:03】	ot run
+【2025-04-24 23:43:06】	ot quit
+【2025-04-24 23:43:25】	ot run
+【2025-04-24 23:43:35】	ot quit
+【2025-04-24 23:44:03】	ot run
+【2025-04-24 23:44:28】	ot quit
+【2025-04-25 00:03:58】	ot run
+【2025-04-25 00:04:08】	ot quit
+【2025-04-25 00:04:35】	ot run
+【2025-04-25 00:05:19】	ot quit
+【2025-04-25 00:06:47】	ot run
+【2025-04-25 00:06:51】	ot quit
+【2025-04-25 00:07:07】	ot run
+【2025-04-25 00:09:47】	ot quit
+【2025-04-25 00:10:05】	ot run
+【2025-04-25 00:10:10】    save sound file succeed: how are you.mp3
+【2025-04-25 00:10:10】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:10:13】    save sound file succeed: how are you.mp3
+【2025-04-25 00:10:13】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:13:05】	ot run
+【2025-04-25 00:13:17】	ot quit
+【2025-04-25 00:13:27】	ot run
+【2025-04-25 00:13:30】	ot quit
+【2025-04-25 00:14:09】	ot run
+【2025-04-25 00:15:07】	ot quit
+【2025-04-25 00:22:42】	ot run
+【2025-04-25 00:27:46】	ot quit
+【2025-04-25 00:27:49】	ot run
+【2025-04-25 00:46:49】	ot run
+【2025-04-25 00:47:10】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:47:10】    save sound file succeed: how are you.mp3
+【2025-04-25 00:47:15】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:47:15】    save sound file succeed: how are you.mp3
+【2025-04-25 00:47:19】	ot quit
+【2025-04-25 00:47:47】	ot run
+【2025-04-25 00:47:51】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:47:51】    save sound file succeed: how are you.mp3
+【2025-04-25 00:48:05】    json格式不对
+【2025-04-25 00:48:15】	ot quit
+【2025-04-25 00:50:27】	ot run
+【2025-04-25 00:50:49】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 00:50:49】    save sound file succeed: how are you.mp3
+【2025-04-25 00:50:55】	ot quit
+【2025-04-25 01:00:35】	ot run
+【2025-04-25 01:00:41】	ot quit
+【2025-04-25 01:01:13】	ot run
+【2025-04-25 01:01:24】	ot quit
+【2025-04-25 01:01:38】	ot run
+【2025-04-25 01:01:40】	ot quit
+【2025-04-25 01:01:59】	ot run
+【2025-04-25 01:02:10】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 01:02:10】    save sound file succeed: how are you.mp3
+【2025-04-25 01:03:16】	ot quit
+【2025-04-25 01:03:47】	ot run
+【2025-04-25 01:03:52】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 01:03:52】    save sound file succeed: how are you.mp3
+【2025-04-25 01:04:01】	ot quit
+【2025-04-25 01:04:46】	ot run
+【2025-04-25 01:04:50】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 01:04:50】    save sound file succeed: how are you.mp3
+【2025-04-25 01:05:53】	ot quit
+【2025-04-25 01:11:13】	ot run
+【2025-04-25 01:11:17】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 01:11:17】    save sound file succeed: how are you.mp3
+【2025-04-25 01:11:55】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 01:11:55】    save sound file succeed: how are you.mp3
+【2025-04-25 01:11:57】	ot quit
+【2025-04-25 01:12:30】	ot run
+【2025-04-25 01:13:32】	ot quit
+【2025-04-25 01:14:03】	ot run
+【2025-04-25 01:14:06】    Content-Type is not audio
+【2025-04-25 01:14:13】    Content-Type is not audio
+【2025-04-25 01:14:17】    Content-Type is not audio
+【2025-04-25 01:14:18】	ot quit
+【2025-04-25 01:15:11】	ot run
+【2025-04-25 01:15:14】    Content-Type is not audio
+【2025-04-25 01:15:19】    Content-Type is not audio
+【2025-04-25 01:15:21】    Content-Type is not audio
+【2025-04-25 01:15:22】    Content-Type is not audio
+【2025-04-25 01:15:24】    Content-Type is not audio
+【2025-04-25 01:15:24】	ot quit
+【2025-04-25 01:15:45】	ot run
+【2025-04-25 01:15:48】    Content-Type is not audio
+【2025-04-25 01:15:51】	ot quit
+【2025-04-25 01:17:11】	ot run
+【2025-04-25 01:17:53】    Content-Type is not audio
+【2025-04-25 01:18:33】	ot quit
+【2025-04-25 01:26:47】	ot run
+【2025-04-25 01:26:49】	ot quit
+【2025-04-25 01:29:14】	ot run
+【2025-04-25 01:31:03】    Content-Type is not audio
+【2025-04-25 01:31:11】	ot quit
+【2025-04-25 01:31:39】	ot run
+【2025-04-25 01:31:55】    response code:404
+【2025-04-25 01:32:41】	ot quit
+【2025-04-25 01:33:05】	ot run
+【2025-04-25 01:33:33】    response code:404
+【2025-04-25 01:33:41】	ot quit
+【2025-04-25 01:34:25】	ot run
+【2025-04-25 01:34:52】    Content-Type is not audio
+【2025-04-25 01:36:44】	ot quit
+【2025-04-25 01:36:53】	ot run
+【2025-04-25 01:37:35】    Content-Type is not audio
+【2025-04-25 01:37:56】	ot quit
+【2025-04-25 01:38:12】	ot run
+【2025-04-25 01:38:20】    Content-Type is not audio
+【2025-04-25 01:49:49】	ot quit
+【2025-04-25 01:49:57】	ot run
+【2025-04-25 01:50:09】    Content-Type is not audio
+【2025-04-25 01:51:21】	ot quit
+【2025-04-25 01:52:58】	ot run
+【2025-04-25 01:53:00】	ot quit
+【2025-04-25 01:53:25】	ot run
+【2025-04-25 01:53:29】    Content-Type is not audio
+【2025-04-25 01:55:13】	ot quit
+【2025-04-25 01:56:22】	ot run
+【2025-04-25 01:56:43】    Content-Type is not audio
+【2025-04-25 02:01:00】    Content-Type is not audio
+【2025-04-25 02:01:02】    Content-Type is not audio
+【2025-04-25 02:06:28】	ot quit
+【2025-04-25 02:06:38】	ot run
+【2025-04-25 02:06:52】    Content-Type is not audio
+【2025-04-25 02:06:56】	ot quit
+【2025-04-25 08:31:09】	ot run
+【2025-04-25 08:31:18】    response code:403
+【2025-04-25 08:31:33】	ot quit
+【2025-04-25 21:25:11】	ot run
+【2025-04-25 21:27:01】    sound file not exists:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3.mp3
+【2025-04-25 21:27:01】    save sound file succeed: how are you.mp3
+【2025-04-25 21:27:39】    sound file not exists:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3.mp3
+【2025-04-25 21:27:39】    save sound file succeed: how are you.mp3
+【2025-04-25 21:27:40】	ot quit
+【2025-04-25 21:40:14】	ot run
+【2025-04-25 21:40:19】    sound file not exists:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3.mp3
+【2025-04-25 21:40:19】    save sound file succeed: how are you.mp3
+【2025-04-25 21:44:00】	ot quit
+【2025-04-25 21:44:10】	ot run
+【2025-04-25 21:44:16】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 21:44:16】    save sound file succeed: how are you.mp3
+【2025-04-25 21:56:21】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/how are you.mp3
+【2025-04-25 21:56:21】    save sound file succeed: how are you.mp3
+【2025-04-25 22:00:14】	ot quit
+【2025-04-25 22:12:28】	ot run
+【2025-04-25 22:12:31】	ot quit
+【2025-04-25 22:25:22】	ot run
+【2025-04-25 22:25:48】    sound file have been played:E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/pronouncation/what are you doing.mp3
+【2025-04-25 22:25:48】    save sound file succeed: what are you doing.mp3
+【2025-04-25 22:25:51】	ot quit
+【2025-05-16 22:00:28】	ot run
+【2025-05-16 22:02:07】	ot quit
+【2025-06-05 21:10:42】	ot run
+【2025-06-05 21:11:00】    response code:404
+【2025-06-05 21:15:33】	ot quit
+【2025-06-05 22:17:27】	ot run
+【2025-06-05 22:59:09】    response code:403
+【2025-06-05 23:07:27】	ot quit
+【2025-06-05 23:08:23】	ot run
+【2025-06-05 23:13:31】    response code:403
+【2025-06-05 23:15:03】	ot quit
+【2025-06-05 23:15:12】	ot run
+【2025-06-05 23:16:26】	ot quit
+【2025-06-05 23:16:38】	ot run
+【2025-06-05 23:16:49】    response code:403
+【2025-06-05 23:32:15】	ot quit
+【2025-06-05 23:32:27】	ot run
+【2025-06-05 23:34:38】	ot quit

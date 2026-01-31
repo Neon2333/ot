@@ -10,7 +10,9 @@
 	"INPUTS" : 
 	[
 		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/images/mainIcon.jpg",
-		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/icons/volume.svg"
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/icons/command.svg",
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/icons/volume.svg",
+		"E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/icons/translate.svg"
 	],
 	"LOCK_FILE" : "E:/WorkSpace/Coding/ScreenshotTranslation/ScreenshotTranslation/build/Desktop_Qt_6_8_1_MSVC2022_64bit-Release/CMakeFiles/ScreenshotTranslation_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

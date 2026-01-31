@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    config::cfg.executableDir = QCoreApplication::applicationDirPath();
+    config::cfg.executableDir = QCoreApplication::applicationDirPath() + "/";
     config::cfg.make();
 
     initLog(config::cfg.logPath.toStdString());

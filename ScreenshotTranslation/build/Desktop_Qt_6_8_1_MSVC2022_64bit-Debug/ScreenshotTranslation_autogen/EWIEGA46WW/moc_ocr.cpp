@@ -41,8 +41,8 @@ static constexpr auto qt_meta_stringdata_ZN3OcrE = QtMocHelpers::stringData(
     "resReady",
     "",
     "res",
-    "resError",
-    "err",
+    "resStatus",
+    "status",
     "quitOcrFinished"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -87,7 +87,7 @@ Q_CONSTINIT const QMetaObject Ocr::staticMetaObject = { {
         // method 'resReady'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'resError'
+        // method 'resStatus'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'quitOcrFinished'
@@ -102,7 +102,7 @@ void Ocr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->resReady((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->resError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->resStatus((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->quitOcrFinished(); break;
         default: ;
         }
@@ -118,7 +118,7 @@ void Ocr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         }
         {
             using _q_method_type = void (Ocr::*)(QString );
-            if (_q_method_type _q_method = &Ocr::resError; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+            if (_q_method_type _q_method = &Ocr::resStatus; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
@@ -172,7 +172,7 @@ void Ocr::resReady(QString _t1)
 }
 
 // SIGNAL 1
-void Ocr::resError(QString _t1)
+void Ocr::resStatus(QString _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);

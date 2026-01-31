@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "autofontsizelabel.h"
+#include <QTextEdit>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QSpacerItem>
@@ -11,6 +12,7 @@
 #include "screenshotwidget.h"
 #include "translate.h"
 #include "config.hpp"
+#include "pronounce.h"
 
 class MainWindow : public QMainWindow
 {
@@ -21,11 +23,15 @@ public:
     ~MainWindow();
 
 private:
-    AutoFontSizeLabel* m_label_textOCR = nullptr;
+    QTextEdit* m_textedit_textOCR = nullptr;
     QWidget* m_widget_center = nullptr;
     QPushButton* m_btn_volume = nullptr;
-    QLabel* m_label_model = nullptr;
-    AutoFontSizeLabel* m_label_textTran = nullptr;
+    QPushButton* m_btn_justTranslate = nullptr;
+    QPushButton* m_btn_command = nullptr;
+    QLabel* m_label_phonetic = nullptr;
+    Pronounce* m_pronounce = nullptr;
+    // QLabel* m_label_mode = nullptr;
+    QTextEdit* m_textedit_textTran = nullptr;
     QLabel* m_label_ocrLanguage = nullptr;
     QSpacerItem* m_placeholderLeft = nullptr;
     QLabel* m_label_status=nullptr;
@@ -50,6 +56,14 @@ private:
     Language ocrLanguage();
     void Close();
     void setStatus(QString status);
+
+
+    //收缩
+    enum class Model{shrink, expand};
+    Model curModel=Model::expand;
+    void switchModel();
+    QRect expandRect;
+    QRect shrinkRect;
 
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;

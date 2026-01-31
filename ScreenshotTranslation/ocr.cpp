@@ -83,7 +83,7 @@ void Ocr::quitOcr()
     // }
 }
 
-QProcess *Ocr::process()
+QProcess* Ocr::process()
 {
     return m_ocrProcess;
 }

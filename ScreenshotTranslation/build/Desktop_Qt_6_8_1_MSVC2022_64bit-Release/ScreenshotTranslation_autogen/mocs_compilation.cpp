@@ -2,5 +2,6 @@
 #include "EWIEGA46WW/moc_autofontsizelabel.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_ocr.cpp"
+#include "EWIEGA46WW/moc_pronounce.cpp"
 #include "EWIEGA46WW/moc_screenshotwidget.cpp"
 #include "EWIEGA46WW/moc_translate.cpp"

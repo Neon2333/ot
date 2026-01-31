@@ -13,12 +13,12 @@ enum class Language{none,zh,en,jp};
 
 struct Config
 {
-public:
-
 const QString ocrLanguageModelCh="models/config_chinese.txt";
 const QString ocrLanguageModelJp="models/config_japan.txt";
 const QString ocrLanguageModelEn="models/config_en.txt";
-const string fanyiURL="http://api.fanyi.baidu.com";
+const string fanyiURL="https://api.fanyi.baidu.com/";
+const string sentenceYuyinURL="https://fanyi.baidu.com/";
+const string wordURL="https://api.dictionaryapi.dev/api/v2/entries/en/";
 
 //main.cpp初始化
 inline static QString executableDir;
@@ -27,6 +27,8 @@ inline static QString configPath;
 inline static QString ocrexePath;
 inline static QString saveShotPath;
 inline static QString logPath;
+inline static QString pronPath;
+inline static QString caPath;
 inline static bool popOcrWindow;
 inline static array<QString,12> ocrCommands;
 
@@ -43,21 +45,23 @@ static void make()
     // configPath=QCoreApplication::applicationDirPath() + "/config.ini";
     // ocrexePath=QCoreApplication::applicationDirPath() + "/thirdParty/Umi-OCR.exe";
     // saveShotPath=QCoreApplication::applicationDirPath() + "/saveShots/shot.png";
-    umiocrConfig = executableDir + "/thirdParty/UmiOCR-data/.settings";
-    configPath = executableDir + "/config.ini";
-    ocrexePath = executableDir + "/thirdParty/Umi-OCR.exe";
-    saveShotPath = executableDir + "/saveShots/shot.png";
-    logPath = executableDir + "/log.txt";
+    umiocrConfig = executableDir + "thirdParty/UmiOCR-data/.settings";
+    configPath = executableDir + "config.ini";
+    ocrexePath = executableDir + "thirdParty/Umi-OCR.exe";
+    saveShotPath = executableDir + "saveShots/shot.png";
+    logPath = executableDir + "log.txt";
+    pronPath = executableDir + "pronouncation";
+    caPath = executableDir + "thirdParty/lib/curl/cacert.pem";
     popOcrWindow=false;
     ocrCommands = {"--help"};
 
     QSettings setting(configPath, QSettings::IniFormat);
 
-    QVariant id = setting.value("Global/transID");
-    fanyiID = id.toString().toStdString();
+    QVariant idTmp = setting.value("Global/transID");
+    fanyiID = idTmp.toString().toStdString();
 
-    QVariant key = setting.value("Global/transKey");
-    fanyiKey = id.toString().toStdString();
+    QVariant keyTmp = setting.value("Global/transKey");
+    fanyiKey = keyTmp.toString().toStdString();
 
     QVariant ocrLanguage = setting.value("Global/ocrLanguage");
     switch(ocrLanguage.toInt())
